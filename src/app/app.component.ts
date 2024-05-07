@@ -43,7 +43,7 @@ export class AppComponent implements OnInit {
     if(isDelet) {
       const currentRecord =  this.customerList.findIndex(m=> m.id === this.customerObj.id);
       this.customerList.splice(currentRecord,1);
-      localStorage.setItem('angular17crud', JSON.stringify(this.customerList));
+      localStorage.setItem('customer', JSON.stringify(this.customerList));
     }
   }
 
